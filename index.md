@@ -1,3 +1,7 @@
+---
+title: Home
+layout: ddoc
+---
 XStyle is a framework for shimming (or polyfilling) and extending CSS, to efficiently support various 
 plugins for additional CSS functionality and backwards compatibility of newer features.
 
