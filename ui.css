@@ -1,5 +1,5 @@
-@import './css/font-awesome.css';
-@import '../x.css';		
+@import './test/css/font-awesome.css';
+@import './x.css';		
 x-property {
 	save-parser: require(xstyle/test/converter);
 }
