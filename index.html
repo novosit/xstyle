@@ -9,18 +9,19 @@
 		=>
 			h1 'xstyle',
 			h2 'An extensible CSS framework that fully leverages modern browsers for building web applications with a single, simple, consistent technology.',
-			div.button {
+			a[href=https://github.com/kriszyp/xstyle/archive/master.zip].button {
 				=> span.icon.icon-download,
 					span 'Download xstyle'; 
 				background-color: #bbb;
 				margin-right: 160px;
 			},
-			div.button 'View xstyle project and documentation' {
+			a[href=https://github.com/kriszyp/xstyle].button 'View xstyle project and documentation' {
 				background-color: #ddd;		
 			},
 			div.tiles {
 				=>
-					a[href=https://github.com/kriszyp/xstyle].tile {
+					div{},
+					a[href=https://github.com/kriszyp/xstyle#element-generation].tile {
 						=>	span.icon '</>' {font-weight: bold;}, 
 							span.title 'Element generation',
 							div.content 'Create UI elements directly in CSS';
@@ -32,25 +33,25 @@
 							div.content 'Bind data to elements with declarative syntax in stylesheets';
 						background-color: #bde;
 					},
-					a[href=https://github.com/kriszyp/xstyle#data-binding].tile {
+					a[href=https://github.com/kriszyp/xstyle#extensions-and-shims].tile {
 						=> span.icon.icon-resize-full, 
 							span.title 'Extensible CSS',
 							div.content 'Create your extensions to CSS';
 						background-color: #cdd;
 					},
-					a[href=https://github.com/kriszyp/xstyle#data-binding].tile {
+					a[href=https://github.com/kriszyp/xstyle#variables].tile {
 						=> span.icon.icon-th-list, 
 							span.title 'Variables',
 							div.content 'Use CSS variables';
 						background-color: #bdf;
 					},
-					a[href=https://github.com/kriszyp/xstyle#data-binding].tile {
+					a[href=https://github.com/kriszyp/xstyle#expressions].tile {
 						=> span.icon.icon-cog, 
 							span.title 'Expressions',
 							div.content 'Use expressions with data bindings directly in stylesheets';
 						background-color: #cef;
 					},
-					a[href=https://github.com/kriszyp/xstyle#data-binding].tile {
+					a[href=https://github.com/kriszyp/xstyle#extensions-and-shims].tile {
 						=> span.icon.icon-certificate, 
 							span.title 'CSS shimming',
 							div.content 'Write modern CSS, with shims for older browsers';
@@ -96,6 +97,6 @@ the definition of UI elements with the presentation definition, where they belon
 	
 	</head>
 	<body>
-		<a href="https://github.com/kriszyp/xstyle"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>	
+		<a href="https://github.com/kriszyp/xstyle"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>	
 	</body>
 </html>

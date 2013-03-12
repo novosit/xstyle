@@ -19,7 +19,8 @@ h1 {
 }
 .icon {
 	color: white;
-	padding: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 .tile {
 	float: left;
@@ -41,7 +42,7 @@ h1 {
 	padding-left: 30px;
 	color: black;
 	width: 300px;
-	height: 26px;
+	text-decoration: none;	
 }
 body {
 	max-width: 900px;
