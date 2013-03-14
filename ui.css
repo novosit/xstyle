@@ -59,6 +59,9 @@ body {
 	width: 280px;
 	height: 200px;
 }
+.error {
+	color: red;
+}
 .more-explanation {
 	clear: both;
 	padding: 10px;
