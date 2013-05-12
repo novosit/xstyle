@@ -4,16 +4,12 @@
 	<meta charset="UTF-8">
 	<title>Try xstyle</title>
 	<style>
-	@import '../x.css';
 	/* Using XStyle to create a page to try out XStyle. */
-	x-property {
-		save-parser: require(xstyle/test/converter);
-	}
-	converter = require('xstyle/test/converter');
+	converter = module('xstyle/test/converter');
 	data = converter/parsed;
 	
 	body {
-		save-parser: true;
+		converter: true;
 		font-family: "Segoe UI", "Segoe WP", "Helvetica Neue", Roboto, sans-serif;	
 		=>
 			h1 'xstyle',
@@ -34,10 +30,12 @@
 			},
 			p 'more information about XStyle' {
 				clear: both;
-			};
+			}
+			
 	}
 
 	h1, h2 {
+		opacity: 0.8;
 		font-weight: 100;
 		font-family: "Segoe UI Light", "Helvetica Neue", RobotoLight, "Segoe UI", "Segoe WP", sans-serif;
 		color: #08E;
@@ -60,7 +58,7 @@
 	
 	<script src="../../dojo/dojo.js" data-dojo-config="async:true"></script>
 	<script>
-		require(['xstyle/xstyle'], function(layout){
+		require(['xstyle/main'], function(layout){
 		});
 	
 	</script>

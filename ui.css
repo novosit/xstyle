@@ -1,12 +1,9 @@
-@import './test/css/font-awesome.css';
-@import './x.css';		
-x-property {
-	save-parser: require(xstyle/test/converter);
-}
-converter = require('xstyle/test/converter');
+@import './css/font-awesome.css';
+
+converter = module('xstyle/test/converter');
 data = converter/parsed;
 body {
-	save-parser: true;
+	converter: true;
 }
 h1, h2 {
 	font-weight: 100;
@@ -33,7 +30,7 @@ h1 {
 	.title {
 		font-size: 1.2em;
 		font-weight: 100; 
-	}
+	};
 }
 .button {
 	float: left;

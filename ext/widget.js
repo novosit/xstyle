@@ -1,4 +1,4 @@
-define(['../elemental'], function(elemental){
+define(['../core/elemental'], function(elemental){
 	var nextId = 0;
 	function parse(value, callback, type, rule){
 		var Class, prototype;
@@ -105,7 +105,7 @@ define(['../elemental'], function(elemental){
 	Widget.widget = def.widget;
 	Widget.role = def.role;
 	return {
-		onProperty: function(name, value, rule){
+		put: function(value, rule, name){
 			// used for a widget property:
 			//	widget: {
 			//		type: 'dijit/form/Button';
@@ -130,7 +130,7 @@ define(['../elemental'], function(elemental){
 			//	}
 			return function(name, propertyValue){
 				require([value], function(Class){
-					elemental.addRenderer(rule, function(element){
+					xstyle.addRenderer(rule, function(element){
 						new Class(parse(propertyValue), element);
 					});
 				});
