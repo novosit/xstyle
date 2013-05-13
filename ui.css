@@ -32,6 +32,9 @@ h1 {
 		font-weight: 100; 
 	};
 }
+.tiles {
+	clear: both;
+}
 .button {
 	float: left;
 	padding: 10px;
