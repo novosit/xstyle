@@ -20,7 +20,7 @@
   "main": "./main",
   "icon": "http://packages.dojofoundation.org/images/xstyle.jpg",
   "dependencies": {
-    "put-selector": "0.3.2"
+    "put-selector": "0.3.6"
   },
   "dojoBuild": "package.js",
   "volo": {
